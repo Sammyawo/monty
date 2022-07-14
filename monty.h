@@ -51,3 +51,5 @@ void popS(stack_t **t_stack, unsigned int inu);
 void pintS(stack_t **t_stack, unsigned int inu);
 void printS(stack_t **t_stack, unsigned int inu);
 void pushS(stack_t **t_stack, unsigned int inu);
+
+#endif
