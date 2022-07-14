@@ -5,6 +5,7 @@ int div_error(unsigned int line_number);
 int pop_error(unsigned int line_number);
 int div_error(unsigned int line_number);
 int pchar_error(unsigned int line_number, char *message);
+int pint_error(unsigned int line_number);
 /**
  * pop_error - Prints pop error messages for empty stacks.
  * @line_number: Line number in script where error occured.

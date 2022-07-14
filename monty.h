@@ -70,5 +70,28 @@ int run_monty(FILE *script_fd);
 void free_stack(stack_t **stack);
 int init_stack(stack_t **stack);
 int check_mode(stack_t *stack);
+void monty_add(stack_t **stack, unsigned int line_number);
+void monty_sub(stack_t **stack, unsigned int line_number);
+void monty_div(stack_t **stack, unsigned int line_number);
+void monty_mul(stack_t **stack, unsigned int line_number);
+void monty_mod(stack_t **stack, unsigned int line_number);
+void monty_nop(stack_t **stack, unsigned int line_number);
+void monty_pchar(stack_t **stack, unsigned int line_number);
+void monty_pstr(stack_t **stack, unsigned int line_number);
+void monty_rotl(stack_t **stack, unsigned int line_number);
+void monty_rotr(stack_t **stack, unsigned int line_number);
+void monty_stack(stack_t **stack, unsigned int line_number);
+void monty_queue(stack_t **stack, unsigned int line_number);
+char **strtow(char *str, char *delims);
+int is_delim(char ch, char *delims);
+int get_word_length(char *str, char *delims);
+int get_word_count(char *str, char *delims);
+char *get_next_word(char *str, char *delims);
+char *get_int(int num);
+unsigned int _abs(int);
+int get_numbase_len(unsigned int num, unsigned int base);
+void fill_numbase_buff(unsigned int num, unsigned int base,
+				       char *buff, int buff_size);
+int pint_error(unsigned int line_number);
 
 #endif
