@@ -13,6 +13,7 @@ int run_monty(FILE *script_fd);
 void free_tokens(void)
 {
 	size_t i = 0;
+
 	if (op_toks == NULL)
 		return;
 
@@ -59,7 +60,6 @@ int is_empty_line(char *line, char *delims)
 		}
 		if (delims[j] == '\0')
 			return (0);
-											
 	}
 	return (1);
 }
